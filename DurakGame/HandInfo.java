@@ -5,6 +5,7 @@ import java.util.ArrayList;
 /**
  * Created by igor.indyk on 11/18/2016.
  */
+//created to define which hand is better
 public class HandInfo {
     public double averageCardValue;
     public int handSize;
