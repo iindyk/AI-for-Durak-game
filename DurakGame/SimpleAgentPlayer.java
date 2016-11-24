@@ -5,6 +5,8 @@ import java.util.ArrayList;
 /**
  * Created by igor on 09.10.16.
  */
+
+//attacks and defends with smallest possible cards
 public class SimpleAgentPlayer extends Player {
     public SimpleAgentPlayer(){
         SimpleAgentPlayer.count++;
