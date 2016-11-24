@@ -87,6 +87,4 @@ public class Card {
       if (this.value==card.value && this.suit==card.suit) return true;
       else return false;
     }
-
-
 }
