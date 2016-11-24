@@ -7,6 +7,8 @@ import java.util.Random;
 /**
  * Created by igor.indyk on 11/17/2016.
  */
+
+//always makes random of possible attacks and defences
 public class RandomAgentPlayer extends Player {
     public RandomAgentPlayer(){
         RandomAgentPlayer.count++;
@@ -50,6 +52,7 @@ public class RandomAgentPlayer extends Player {
         ArrayList<Card> availableHand1=new ArrayList<>();
         ArrayList<Card> availableHand2=new ArrayList<>();
         ArrayList<Card> tmp=new ArrayList<>();
+        //defining possible defences list
         for (int i = 0; i <this.hand.size() ; i++) {
             tmp.clear();
             availableHand0.clear();
@@ -144,6 +147,7 @@ public class RandomAgentPlayer extends Player {
         ArrayList<Card> availableHand1=new ArrayList<>();
         ArrayList<Card> availableHand2=new ArrayList<>();
         ArrayList<Card> tmp=new ArrayList<>();
+        //defining possible defences list
         for (int i = 0; i <this.hand.size() ; i++) {
             tmp.clear();
             availableHand0.clear();
