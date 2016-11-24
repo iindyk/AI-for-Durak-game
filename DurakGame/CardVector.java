@@ -47,17 +47,11 @@ public class CardVector {
             if (card.suit=='s') this.vector.add(1); else this.vector.add(0);
         }
     }
+    //defines euclidian distance between vectors
     public double distTo(CardVector cardVector){
         double result=0;
         for (int i = 0; i <Math.min(this.vector.size(),cardVector.vector.size()) ; i++) {
             result+=Math.pow(this.vector.get(i)-cardVector.vector.get(i),2);
-        }
-        return sqrt(result) ;
-    }
-    public double norm(){
-        double result=0;
-        for (int i = 0; i <this.vector.size() ; i++) {
-            result+=(this.vector.get(i))^2;
         }
         return sqrt(result) ;
     }
@@ -83,9 +77,9 @@ public class CardVector {
             else if (valueInt==1 && i%5==4) result+="s ";
         }
         result+="; trump suit is "+this.trumpSuit;
-        //result+="; distance to all in cluster "+(int)sqrt(this.distToAllInCluster);
         return result;
     }
+    //converts cardvector back to arraylist of cards - bijection
     public ArrayList<Card> toArrayList(){
         ArrayList<Card> vectorArrayList=new ArrayList<>();
         int i=0;
